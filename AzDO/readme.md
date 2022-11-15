@@ -1,6 +1,8 @@
-﻿# Azure DevOps to Youtrack replication
+﻿# Azure DevOps to-from Youtrack replication or syncing issues between
 
 ## Using DevOps CLI and Youtrack REST API
+- Using Azure DevOps C# nuget package
+- Using YoutrackSharp C# lib from JetBrains
 
 ### Assumed app.config values
 ```
