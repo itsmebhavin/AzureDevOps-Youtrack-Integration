@@ -2,7 +2,7 @@
 
 ## Using DevOps CLI and Youtrack REST API
 
-### Assumes app.config values
+### Assumed app.config values
 ```
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
