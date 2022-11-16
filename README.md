@@ -1,1 +1,1 @@
-[doc/readme.md](../AzDO/readme.md) 
+[readme.md](/AzDO/readme.md) 
