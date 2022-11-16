@@ -11,7 +11,7 @@ namespace AzDO
         {
             var youtrackUri     = ConfigurationManager.AppSettings["YoutrackURL"];
             var youtrackToken   = ConfigurationManager.AppSettings["YoutrackToken"];
-            var youtrackProject = ConfigurationManager.AppSettings["YoutrackProijectName"];
+            var youtrackProject = ConfigurationManager.AppSettings["YoutrackProjectName"];
             var youtrackAssignee    = ConfigurationManager.AppSettings["YoutrackAssignee"];
 
             try
