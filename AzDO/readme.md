@@ -12,7 +12,7 @@
         <add key="PAT" value="adjlasjdakljsczm,nxcmziiauqw,zcz;clzkc" />
         <add key="OrgName" value="{YOUR ORG NAME FOR Azure DevOps}"/>
         <add key="ProjectName" value="{PROJECT NAME IN AzDO}" />
-		 <add key="YoutrackProijectName" value="{Youtrack Project ID}"/>
+		 <add key="YoutrackProjectName" value="{Youtrack Project ID}"/>
 		 <add key="YoutrackToken" value="perm:YnB {Youtrack Token}"/>
 		 <add key="YoutrackURL" value="{Youtrack URL for your ORG}"/>
 		 <add key="YoutrackAssignee" value="{Sample Youtrack Ticket Assignee Username}"/>
