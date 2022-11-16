@@ -9,11 +9,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
      <appSettings>
-        <add key="PAT" value="adjlasjdakljsczm,nxcmziiauqw,zcz;clzkc" />
+        <add key="PAT" value="{Azure PAT with Board scope}" /> <!-- e.g. asdad9lkjsdfj02lsdfknma -->
         <add key="OrgName" value="{YOUR ORG NAME FOR Azure DevOps}"/>
         <add key="ProjectName" value="{PROJECT NAME IN AzDO}" />
 		 <add key="YoutrackProjectName" value="{Youtrack Project ID}"/>
-		 <add key="YoutrackToken" value="perm:YnB {Youtrack Token}"/>
+		 <add key="YoutrackToken" value="{Youtrack Token}"/> <!-- e.g. perm:YnB.... -->
 		 <add key="YoutrackURL" value="{Youtrack URL for your ORG}"/>
 		 <add key="YoutrackAssignee" value="{Sample Youtrack Ticket Assignee Username}"/>
   </appSettings> 
