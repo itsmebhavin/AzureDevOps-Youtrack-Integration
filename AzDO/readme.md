@@ -31,3 +31,25 @@
 - https://blog.jetbrains.com/youtrack/2017/07/youtracksharp-3-0-beta-a-net-standard-client-for-youtrack/
 - https://blog.jetbrains.com/youtrack/2011/06/youtracksharp-a-net-client-for-youtrack/
 - https://www.conradakunga.com/blog/querying-and-extracting-data-from-youtrack/
+
+
+## Azure DevOps REST Api with Postman
+
+Set authentication = basic {base64encoded token}
+
+### Queries
+
+- Get workitem by id ```GET https://dev.azure.com/{OrgName}/_apis/wit/workitems?ids=157&api-version=5.1```
+```GET https://dev.azure.com/{OrgName}/{ProjectName/ID}/_apis/wit/workItems/94```
+- Get projects list ``` GET https://dev.azure.com/{OrgName}/_apis/projects```
+- Get all workitem with type=Task ```GET https://dev.azure.com/{OrgName}/{ProjectName/ID}/_apis/wit/workitems/$Task?api-version=6.0```
+- Get results based on wiql (workitem query language) ```POST https://dev.azure.com/{OrgName}/{ProjectName/ID}/_apis/wit/wiql?api-version=6.0```
+```
+BODY Type = Json
+{
+   "query": "select [System.Id], [System.WorkItemType], [System.Title], [System.AssignedTo], [System.State], [System.Tags] from WorkItems where [System.TeamProject] = @project and [System.WorkItemType] <> '' and [Microsoft.VSTS.Common.StateChangeDate] = @today"
+}
+```
+- Get comments for workitem {id} ```GET https://dev.azure.com/{OrgName}/{ProjectName/ID}/_apis/wit/workItems/94/comments```
+- Get all updates for workitem {id} ```GET https://dev.azure.com/{OrgName}/{ProjectName/ID}/_apis/wit/workItems/94/updates```
+- Get all fields for project ```GET https://dev.azure.com/{OrgName}/{ProjectName/ID}/_apis/wit/workItems/94/updates```
