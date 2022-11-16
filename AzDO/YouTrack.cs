@@ -29,8 +29,8 @@ namespace AzDO
                 newIssue.SetField("Type", "Bug"); // non default value
 
                 //Note: Commenting out to avoid keep creating new tickets everytime while development
-                var result = issuesService.CreateIssue("USP", newIssue).Result;
-                Console.WriteLine("New Issue creted - ", result);// result will be like projectid-{issueid}. e.g. USP-230 , which you can log back in AzDO
+                var result = issuesService.CreateIssue(youtrackProject, newIssue).Result;
+                Console.WriteLine("New Issue Created - ", result);// result will be like projectid-{issueid}. e.g. USP-230 , which you can log back in AzDO
                 #endregion
 
                 #region get issues
